@@ -2,8 +2,6 @@ import React from "react";
 
 import "../component/todos.css";
 import {Card,CardContent,Grid,ListItemButton,ListItemText,Checkbox,} from "@mui/material";
-import AddTodo from "./AddTodo";
-
 
 // 1. This component formats and returns the list of todos.
 // 2. Treat the question mark like an if statement.
@@ -19,8 +17,9 @@ const Todos = ({ todos }) => {
           <Grid key={todo.id}>
             <Card>
               <CardContent>
-
-                <span style={{ padding: "50px" }}> {AddTodo} </span>
+                <span style={{ padding: "50px" }}>
+                  {todo.content}
+                  </span>
               </CardContent>
             </Card>
           </Grid>
