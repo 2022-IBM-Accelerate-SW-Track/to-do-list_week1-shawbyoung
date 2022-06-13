@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, TextField } from "@mui/material";
-//meow
+
 class AddTodo extends Component {
     // A local react state of the this component with a content property set to nothing.
     constructor() {
@@ -42,7 +42,7 @@ class AddTodo extends Component {
             label="Add New Item"
             variant="outlined"
             onChange={this.handleChange}
-            value={this.content}
+            value={this.state.content}
           />
           <Button
             style={{ marginLeft: "10px" }}

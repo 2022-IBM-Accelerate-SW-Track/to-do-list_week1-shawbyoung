@@ -4,7 +4,6 @@ import "../component/todos.css";
 import {Card,CardContent,Grid,ListItemButton,ListItemText,Checkbox,} from "@mui/material";
 import AddTodo from "./AddTodo";
 
-//meow
 
 // 1. This component formats and returns the list of todos.
 // 2. Treat the question mark like an if statement.
@@ -19,7 +18,6 @@ const Todos = ({ todos }) => {
         return (
           <Grid key={todo.id}>
             <Card>
-              {/* {this.state} */}
               <CardContent>
 
                 <span style={{ padding: "50px" }}> {AddTodo} </span>
@@ -29,12 +27,12 @@ const Todos = ({ todos }) => {
         );
       })
     ) : (
-      <p>{'You have no todos left'}</p>
+      <p>You have no todos left</p>
     );
     // Lastly, return the todoList constant that we created above to show all of the items on the screen.
     return (
       <div className="todoCollection" style={{ padding: "10px" }}>
-        { {todoList} }
+         {todoList} 
       </div>
     );
 };

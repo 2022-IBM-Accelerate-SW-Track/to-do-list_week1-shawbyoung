@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-// import Todos from '../component/todos.js';
-// import AddTodo from '../component/AddTodo.js';
-// import './Home.css';
-// meow
+import Todos from '../component/todos';
+import AddTodo from '../component/AddTodo';
+import './Home.css';
+
 class Home extends Component {
   // A default state of this component with an empty list of todos.
   constructor() {
@@ -33,9 +33,8 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Todo's </h1>
-        <p>  cringe complation</p>
-        {/* <Todos todos={this.state}/>
-        <AddTodo addTodo={this.addTodo}/> */}
+        <Todos todos={this.state.todos}/>
+        <AddTodo addTodo={this.addTodo}/>
       </div>
     );
   }
