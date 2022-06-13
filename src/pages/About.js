@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
 import profile from "../assets/profile.jpg";
-
+//meow
 
 export default class About extends Component {
   render() {
